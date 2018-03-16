@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Saikoro" translatesAutoresizingMaskIntoConstraints="NO" id="riF-dp-k4s">
+                                <rect key="frame" x="67" y="135" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="I4j-NO-nSg"/>
+                                    <constraint firstAttribute="height" constant="128" id="fes-8P-iRl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3V-8I-tDF">
+                                <rect key="frame" x="144" y="307" width="87" height="52"/>
+                                <accessibility key="accessibilityConfiguration" identifier="label_result"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="87" id="T2I-22-Z3u"/>
+                                    <constraint firstAttribute="height" constant="52" id="wSN-i1-Fde"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgD-UB-IYs">
+                                <rect key="frame" x="141" y="403" width="92" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="button_throw"/>
+                                <state key="normal" title="ダイスを振る"/>
+                                <connections>
+                                    <action selector="didClickThrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vo-qg-irN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i3V-8I-tDF" firstAttribute="top" secondItem="riF-dp-k4s" secondAttribute="bottom" constant="44" id="BMe-aQ-0H8"/>
+                            <constraint firstItem="wgD-UB-IYs" firstAttribute="top" secondItem="i3V-8I-tDF" secondAttribute="bottom" constant="44" id="LmO-SU-KgK"/>
+                            <constraint firstItem="wgD-UB-IYs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OEl-fh-9Av"/>
+                            <constraint firstItem="riF-dp-k4s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aw7-im-sxk"/>
+                            <constraint firstItem="i3V-8I-tDF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lEB-RL-1R6"/>
+                            <constraint firstItem="i3V-8I-tDF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrS-VO-6VP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="i3V-8I-tDF" id="B2q-NB-ZoN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Saikoro" width="150" height="150"/>
+    </resources>
+</document>

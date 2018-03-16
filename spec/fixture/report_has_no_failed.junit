@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='SampleDiceUITests.xctest' tests='2' failures='1'>
+  <testsuite name='SampleDiceUITests.SampleDiceUITests' tests='2' failures='1'>
+    <testcase classname='SampleDiceUITests.SampleDiceUITests' name='testButtonLabel' time='4.658'/>
+    <testcase classname='SampleDiceUITests.SampleDiceUITests' name='testDiceReturned' time='5.234'/>
+    <testcase classname='SampleDiceUITests.SampleDiceUITests' name='testDiceReturned2' time='4.928'/>
+    <testcase classname='SampleDiceUITests.SampleDiceUITests' name='testDiceReturned3' time='3.234'/>
+  </testsuite>
+</testsuites>

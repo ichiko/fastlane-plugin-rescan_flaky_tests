@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='SampleDiceUITests.xctest' tests='2' failures='1'>
+  <testsuite name='SampleDiceUITests.SampleDiceUITests' tests='2' failures='1'>
+    <testcase classname='SampleDiceUITests.SampleDiceUITests' name='testButtonLabel' time='4.658'/>
+    <testcase classname='SampleDiceUITests.SampleDiceUITests' name='testDiceReturned'>
+      <failure message='XCTAssertEqual failed: (&quot;5&quot;) is not equal to (&quot;3&quot;) - '>SampleDiceUITests.swift:42</failure>
+    </testcase>
+    <testcase classname='SampleDiceUITests.SampleDiceUITests' name='testDiceReturned2'>
+      <failure message='XCTAssertEqual failed: (&quot;5&quot;) is not equal to (&quot;2&quot;) - '>SampleDiceUITests.swift:52</failure>
+    </testcase>
+    <testcase classname='SampleDiceUITests.SampleDiceUITests' name='testDiceReturned3'>
+      <failure message='XCTAssertEqual failed: (&quot;5&quot;) is not equal to (&quot;1&quot;) - '>SampleDiceUITests.swift:62</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
