@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'ichiko.revjune@gmail.com'
 
   spec.summary       = 'Re-run `scan` action for each failed test cases.'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-rescan_each_fragile_tests"
+  spec.homepage      = "https://github.com/ichiko/fastlane-plugin-rescan_each_fragile_tests"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
